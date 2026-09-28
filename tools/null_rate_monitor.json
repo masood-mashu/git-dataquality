@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "name": "null_rate_monitor",
+  "description": "Calculates column null percentage and verifies compliance against SLA",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "column_stats_json": {
+        "type": "string",
+        "description": "JSON string containing column_name, total_rows, and null_count"
+      }
+    },
+    "required": [
+      "column_stats_json"
+    ]
+  },
+  "returns": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      }
+    }
+  }
+}

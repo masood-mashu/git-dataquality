@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "name": "numerical_outlier_detector",
+  "description": "Calculates Z-score deviation for numeric batch averages against historical baseline",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "zscore_data_json": {
+        "type": "string",
+        "description": "JSON string with batch_value, historical_mean, and std"
+      }
+    },
+    "required": [
+      "zscore_data_json"
+    ]
+  },
+  "returns": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      }
+    }
+  }
+}

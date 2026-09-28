@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "name": "batch_volume_drift_checker",
+  "description": "Audits current batch record count against 30-day moving average volume",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "current_records": {
+        "type": "string",
+        "description": "Total row count in current ingestion partition"
+      }
+    },
+    "required": [
+      "current_records"
+    ]
+  },
+  "returns": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      }
+    }
+  }
+}
