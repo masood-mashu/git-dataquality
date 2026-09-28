@@ -1,0 +1,18 @@
+name: numerical-outlier-detector
+version: 1.0.0
+description: "Calculates Z-score deviation for numeric batch averages against historical baseline"
+input_schema:
+  type: object
+  properties:
+    zscore_data_json:
+      type: string
+      description: "JSON string with batch_value, historical_mean, and historical_std"
+  required:
+    - zscore_data_json
+implementation:
+  type: script
+  path: numerical_outlier_detector.py
+  runtime: python3
+annotations:
+  read_only: true
+  idempotent: true

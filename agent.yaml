@@ -1,0 +1,39 @@
+spec_version: "0.1.0"
+name: git-dataquality
+version: 1.0.0
+description: "Autonomous Data Pipeline Drift, Null Rate Threshold & Distribution Anomaly Sentry Agent"
+author: "masood-mashu"
+license: "Apache-2.0"
+
+model:
+  preferred: "openai:gpt-4o"
+  fallback:
+    - "anthropic:claude-3-5-sonnet"
+    - "openai:gpt-4o-mini"
+  constraints:
+    temperature: 0.1
+    max_tokens: 4096
+
+skills:
+  - data-null-rate-profiling
+  - statistical-distribution-auditing
+
+tools:
+  - null-rate-monitor
+  - numerical-outlier-detector
+  - batch-volume-drift-checker
+
+runtime:
+  max_turns: 50
+  timeout: 120
+
+tags:
+  - data-analytics
+  - data-quality
+  - anomaly-detection
+  - pipeline-monitoring
+  - passport-challenge
+
+metadata:
+  passport_id: "aps-dataquality-01"
+  passport_category: "Data & analytics"

@@ -1,0 +1,32 @@
+{
+  "agent": "git-dataquality",
+  "visas_earned": 4,
+  "visas": [
+    {
+      "visa": "OpenAI SDK",
+      "status": "PASSED",
+      "output_file": "D:\\hackathon\\hidevs\\git-dataquality\\exports\\openai\\openai_assistant_spec.json"
+    },
+    {
+      "visa": "CrewAI Framework",
+      "status": "PASSED",
+      "output_files": [
+        "D:\\hackathon\\hidevs\\git-dataquality\\exports\\crewai\\crewai_agent_config.json",
+        "D:\\hackathon\\hidevs\\git-dataquality\\exports\\crewai\\crewai_agent.py"
+      ]
+    },
+    {
+      "visa": "Claude Code / MCP",
+      "status": "PASSED",
+      "output_files": [
+        "D:\\hackathon\\hidevs\\git-dataquality\\exports\\claude_code\\CLAUDE.md",
+        "D:\\hackathon\\hidevs\\git-dataquality\\exports\\claude_code\\claude_desktop_config.json"
+      ]
+    },
+    {
+      "visa": "Lyzr Ecosystem",
+      "status": "PASSED",
+      "output_file": "D:\\hackathon\\hidevs\\git-dataquality\\exports\\lyzr\\lyzr_agent_config.json"
+    }
+  ]
+}

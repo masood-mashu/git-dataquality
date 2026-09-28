@@ -1,0 +1,18 @@
+name: batch-volume-drift-checker
+version: 1.0.0
+description: "Audits current batch record count against 30-day moving average volume"
+input_schema:
+  type: object
+  properties:
+    current_records:
+      type: string
+      description: "Total row count in current ingestion partition"
+  required:
+    - current_records
+implementation:
+  type: script
+  path: batch_volume_drift_checker.py
+  runtime: python3
+annotations:
+  read_only: true
+  idempotent: true

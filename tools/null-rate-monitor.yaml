@@ -1,0 +1,18 @@
+name: null-rate-monitor
+version: 1.0.0
+description: "Calculates column null percentage and verifies compliance against maximum allowed SLA"
+input_schema:
+  type: object
+  properties:
+    column_stats_json:
+      type: string
+      description: "JSON string containing column_name, total_rows, and null_count"
+  required:
+    - column_stats_json
+implementation:
+  type: script
+  path: null_rate_monitor.py
+  runtime: python3
+annotations:
+  read_only: true
+  idempotent: true
