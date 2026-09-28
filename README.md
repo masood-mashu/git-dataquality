@@ -2,7 +2,7 @@
 
 [![OpenGAP Standard](https://img.shields.io/badge/OpenGAP-v0.1.0-blue.svg)](https://github.com/open-gitagent/opengap)
 [![Category](https://img.shields.io/badge/Category-Data%20%26%20analytics-success.svg)](https://hidevs.com)
-[![Visas](https://img.shields.io/badge/Visas-4%2F4%20Earned-brightgreen.svg)](#framework-visas)
+[![Visas](https://img.shields.io/badge/Visas-15%2F15%20Earned-brightgreen.svg)](#framework-visas)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
 **GitDataQuality** is an OpenGAP-compliant, autonomous autonomous data pipeline drift, null rate threshold & distribution anomaly sentry agent.

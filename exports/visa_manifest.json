@@ -1,32 +1,82 @@
 {
   "agent": "git-dataquality",
-  "visas_earned": 4,
+  "visas_earned": 15,
+  "total_possible": 15,
   "visas": [
     {
-      "visa": "OpenAI SDK",
+      "framework": "system-prompt",
       "status": "PASSED",
-      "output_file": "D:\\hackathon\\hidevs\\git-dataquality\\exports\\openai\\openai_assistant_spec.json"
+      "visa_file": "exports\\system-prompt\\system-prompt_export.txt"
     },
     {
-      "visa": "CrewAI Framework",
+      "framework": "claude-code",
       "status": "PASSED",
-      "output_files": [
-        "D:\\hackathon\\hidevs\\git-dataquality\\exports\\crewai\\crewai_agent_config.json",
-        "D:\\hackathon\\hidevs\\git-dataquality\\exports\\crewai\\crewai_agent.py"
-      ]
+      "visa_file": "exports\\claude-code\\claude-code_export.txt"
     },
     {
-      "visa": "Claude Code / MCP",
+      "framework": "openai",
       "status": "PASSED",
-      "output_files": [
-        "D:\\hackathon\\hidevs\\git-dataquality\\exports\\claude_code\\CLAUDE.md",
-        "D:\\hackathon\\hidevs\\git-dataquality\\exports\\claude_code\\claude_desktop_config.json"
-      ]
+      "visa_file": "exports\\openai\\openai_export.txt"
     },
     {
-      "visa": "Lyzr Ecosystem",
+      "framework": "crewai",
       "status": "PASSED",
-      "output_file": "D:\\hackathon\\hidevs\\git-dataquality\\exports\\lyzr\\lyzr_agent_config.json"
+      "visa_file": "exports\\crewai\\crewai_export.txt"
+    },
+    {
+      "framework": "openclaw",
+      "status": "PASSED",
+      "visa_file": "exports\\openclaw\\openclaw_export.txt"
+    },
+    {
+      "framework": "nanobot",
+      "status": "PASSED",
+      "visa_file": "exports\\nanobot\\nanobot_export.txt"
+    },
+    {
+      "framework": "lyzr",
+      "status": "PASSED",
+      "visa_file": "exports\\lyzr\\lyzr_export.txt"
+    },
+    {
+      "framework": "github",
+      "status": "PASSED",
+      "visa_file": "exports\\github\\github_export.txt"
+    },
+    {
+      "framework": "copilot",
+      "status": "PASSED",
+      "visa_file": "exports\\copilot\\copilot_export.txt"
+    },
+    {
+      "framework": "opencode",
+      "status": "PASSED",
+      "visa_file": "exports\\opencode\\opencode_export.txt"
+    },
+    {
+      "framework": "cursor",
+      "status": "PASSED",
+      "visa_file": "exports\\cursor\\cursor_export.txt"
+    },
+    {
+      "framework": "gemini",
+      "status": "PASSED",
+      "visa_file": "exports\\gemini\\gemini_export.txt"
+    },
+    {
+      "framework": "codex",
+      "status": "PASSED",
+      "visa_file": "exports\\codex\\codex_export.txt"
+    },
+    {
+      "framework": "kiro",
+      "status": "PASSED",
+      "visa_file": "exports\\kiro\\kiro_export.txt"
+    },
+    {
+      "framework": "gitclaw",
+      "status": "PASSED",
+      "visa_file": "exports\\gitclaw\\gitclaw_export.txt"
     }
   ]
 }
